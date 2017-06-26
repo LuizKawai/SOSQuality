@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.luiz.sosquality.utils.ScrollChildSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout_recomendation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/recomendationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/recomendationLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/recomendation_item"
+                android:id="@+id/recomendation_list"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noRecomendations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noRecomendationsMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="19dp"
+                android:text="No hay recomendaciones disponibles"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</com.example.luiz.sosquality.utils.ScrollChildSwipeRefreshLayout>

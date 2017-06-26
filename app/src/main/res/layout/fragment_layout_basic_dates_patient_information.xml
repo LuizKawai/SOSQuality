@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informacion Basica"
+                    android:gravity="center"
+                    android:textSize="38dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/area_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_cliente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_contact_image" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp">
+
+                        <EditText
+                            android:id="@+id/campo_nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="nombre"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="30"
+                            android:minLines="1"
+                            android:text=""/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_dni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/area_nombre"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_dni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_dni" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_dni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp">
+
+                        <EditText
+                            android:id="@+id/campo_dni"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+
+                            android:hint="dni"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:maxLines="1"
+                            android:minLines="1" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/area_nombre"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_peso" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_peso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp">
+
+                        <EditText
+                            android:id="@+id/campo_peso"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="peso"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:minLines="1" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_talla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/area_nombre"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_talla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_talla" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_talla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp">
+
+                        <EditText
+                            android:id="@+id/campo_talla"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="talla"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:maxLines="1"
+                            android:minLines="1" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/area_nombre"
+                    android:orientation="horizontal"
+                    android:layout_margin="15dp">
+
+                    <ImageView
+                        android:id="@+id/img_sexo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_sexo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="32dp"
+                        android:text="Sexo" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radiogroup_sex"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="32dp">
+
+                        <RadioButton
+                            android:text="M"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sexoM"
+                            android:layout_weight="1"
+                            android:checked="false"/>
+
+                        <RadioButton
+                            android:text="F"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sexoF"
+                            android:layout_weight="1"
+                            android:checked="false"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_tipo_sangre"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/area_nombre"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_tipo_sangre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_sangre" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:text="Tipo de Sangre"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner"
+                        android:entries="@array/blood_type_spinner">
+                    </Spinner>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_next_contact"
+                android:layout_margin="10dp"
+                android:text="Siguiente"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

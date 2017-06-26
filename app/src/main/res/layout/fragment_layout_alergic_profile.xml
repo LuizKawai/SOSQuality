@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/agregar_alergia"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:gravity="center_horizontal"
+        android:text="Agregar Alergia"/>
+
+    <com.example.luiz.sosquality.utils.ScrollChildSwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/refresh_layout_alergic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/alergicContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/alergicLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/alergic_item"
+                    android:id="@+id/alergic_list"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/noAlergic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/noAlergicMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:text="No hay aletrgias registradas"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </com.example.luiz.sosquality.utils.ScrollChildSwipeRefreshLayout>
+
+</LinearLayout>

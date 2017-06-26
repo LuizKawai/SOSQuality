@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background">
+
+    <TextView
+        style="@style/BasicFont"
+        android:text="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameTV" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/userNameET"
+        android:hint="Nombre" />
+
+    <TextView
+        style="@style/BasicFont"
+        android:text="DNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userDNITV" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/userDNIET"
+        android:hint="DNI"
+        android:maxLines="1"
+        android:maxLength="8"
+        android:minLines="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/BasicFont"
+            android:text="Tipo de Sangre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userBloodTypeTV"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userBloodTipeSpinner"
+            android:layout_weight="1"
+            android:entries="@array/blood_type_spinner"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/BasicFont"
+            android:text="Edad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userAgeTV"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/userAgeET"
+            android:layout_weight="1"
+            android:hint="Edad"
+            android:maxLength="3"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/BasicFont"
+            android:text="Sexo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userSexTV"
+            android:layout_weight="2" />
+
+        <RadioButton
+            android:text="M"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userSexMRB"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="F"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userSexFRB"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/BasicFont"
+            android:text="Talla"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userHeightTV"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/userHeightET"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:hint="Talla"
+            android:maxLength="3"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/BasicFont"
+            android:text="Peso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userWeightTV"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/userWeightET"
+            android:layout_weight="1"
+            android:hint="Peso"
+            android:maxLength="3"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/BasicFont"
+        android:text="Desliza hacia la derecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userMesageTV" />
+
+    <Button
+        android:text="Registrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userRegisterBtn" />
+
+</LinearLayout>
